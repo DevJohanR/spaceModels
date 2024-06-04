@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rosa-color: #eb3d6e;
+
+  --azul-color: #52c0bc;
+}
+
+

@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+}
+
+.menuIcon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+ul {
+  display: none; /* Oculto por defecto */
+  list-style-type: none;
+  padding: 0;
+}
+
+.showMenu {
+  display: flex; /* Mostrar el menú cuando isOpen es true */
+  background-color: aqua;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 250px;
+  height: 200px;
+ 
+  
+}
+
+@media (min-width: 768px) {
+  .navbar, .menuIcon, ul {
+    display: none; /* Ocultar todo en pantallas mayores o iguales a 768px */
+  }
+}
