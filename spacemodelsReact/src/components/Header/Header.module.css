@@ -1,11 +1,28 @@
 .Header{
   background: url(../../assets/images/hero2.jpg);
-  height: 145vh;
+  height: 100vh;
   width: 100%;
   background-size: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
  
 }
+
+
+.overlay {
+  position: absolute; /* Posiciona absolutamente dentro del contenedor relativo */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.664); /* Color negro con 50% de opacidad */
+  z-index: 1; /* Asegúrate de que la capa oscura esté sobre el fondo pero debajo del contenido */
+}
+
+.headerTop, .headerButtom {
+  position: relative;
+  z-index: 2; /* Asegúrate de que el contenido esté por encima de la capa oscura */
+}
+
 
 .headerTop {
     display: flex;
@@ -13,8 +30,8 @@
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    
   }
+
   
   .iconContainer {
     background-color: var(--rosa-color);
@@ -37,3 +54,47 @@
 
   }
   
+
+  .headerHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .textCointainer{
+    width: 90%;
+    max-width: 600px;
+   color: white;
+    padding: 20px;
+   
+    border-radius: 8px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Opcional: para tamaño de fuente responsivo */
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
+    z-index: 2;
+    text-align: center;
+  }
+
+  .textCointainer h1{
+    padding-top: 30px;
+    font-family: var(--font-titulo);
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw, 3rem); /* Tamaño de fuente adaptable */
+  }
+
+  .textCointainer p{
+    padding-top: 30px;
+    font-family: var(--font-parrafo);
+    line-height: 1.5;
+  }
+
+  .pink{
+    color: var(--rosa-color);
+  }
+
+  .blue{
+    color: var(--azul-color);
+  }

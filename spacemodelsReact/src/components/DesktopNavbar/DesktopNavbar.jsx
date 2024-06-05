@@ -7,8 +7,8 @@ const DesktopNavbar = () => {
   return (
     <div className={styles.componentDesktopNavbar}>
         <div className={styles.social} > 
-        <span><CiInstagram /></span>
-        <span><CiFacebook /></span>
+        <span><CiInstagram size={20} /></span>
+        <span><CiFacebook size={20} /></span>
         
         </div>
        

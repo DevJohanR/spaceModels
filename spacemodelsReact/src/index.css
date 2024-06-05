@@ -6,8 +6,12 @@
 
 :root {
   --rosa-color: #ec3c6c;
-
   --azul-color: #52c0bc;
+
+  --font-titulo: 'Montserrat', sans-serif;
+  --font-parrafo: 'Poppins', sans-serif;
+
+
 }
 
 
