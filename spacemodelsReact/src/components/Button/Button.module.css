@@ -1,0 +1,8 @@
+.componentButton button{
+    background-color: var(--rosa-color);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 120px;
+    color: white;
+}
