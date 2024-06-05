@@ -1,3 +1,4 @@
+/**/
 .Header{
   background: url(../../assets/images/hero2.jpg);
   height: 100vh;
@@ -9,7 +10,7 @@
 
 
 .overlay {
-  position: absolute; /* Posiciona absolutamente dentro del contenedor relativo */
+  position: fixed; /* Posiciona absolutamente dentro del contenedor relativo */
   top: 0;
   left: 0;
   right: 0;
@@ -60,6 +61,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+ 
 
   }
 
@@ -76,6 +79,7 @@
     font-size: clamp(1rem, 2.5vw, 1.5rem); 
     z-index: 2;
     text-align: center;
+
   }
 
   .textCointainer h1{
@@ -98,3 +102,48 @@
   .blue{
     color: var(--azul-color);
   }
+
+
+  .ctaButtons{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+
+
+
+  @media (max-width:407px){
+
+    .textCointainer{
+      width: 90%;
+      max-width: 600px;
+     color: white;
+      padding: 5px;
+   
+    }
+  
+    .textCointainer h1{
+      padding-top: 30px;
+      font-family: var(--font-titulo);
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3rem); /* Tamaño de fuente adaptable */
+  
+    }
+  
+  }
+
+
+@media (max-width:498px){
+  .textCointainer h1{
+    padding-top: 30px;
+    font-family: var(--font-titulo);
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño de fuente adaptable */
+
+  }
+
+}

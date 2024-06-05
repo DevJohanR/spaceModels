@@ -12,7 +12,7 @@ const DesktopNavbar = () => {
         
         </div>
        
-       <div className={styles.btn}> <Button/></div>
+       <div className={styles.btn}> <Button name={"BENEFICIOS"} /></div>
        
     </div>
   )
