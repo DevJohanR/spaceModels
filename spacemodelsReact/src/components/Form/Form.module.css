@@ -1,0 +1,17 @@
+:root {
+    --rosa-color: #ec3c6c;
+    --azul-color: #52c0bc;
+    --font-titulo: 'Montserrat', sans-serif;
+    --font-parrafo: 'Poppins', sans-serif;
+  }
+
+.Form{
+    width: 100%;
+    height: auto;
+    background-color: var(--rosa-color);
+    z-index: 3;
+    position: relative;
+    margin-top: 160px;
+   
+
+}
